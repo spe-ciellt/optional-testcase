@@ -16,6 +16,7 @@ CPPUTEST_SCRIPTS = share/cpputest
 TARGET_PLATFORM = x86_64-linux-gnu
 TOPDIR = $(shell dirname `pwd`)
 
+CPPUTEST_USE_MEM_LEAK_DETECTION = N
 CPP_PLATFORM = Gcc
 CPPUTEST_CXXFLAGS = -std=c++17
 

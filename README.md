@@ -1,5 +1,17 @@
 # CppUTest fails to compile with `std::optional` included
 
+**Update**
+
+I finally managed to compile this thing by adding a variable in
+the `Makefile`:
+```
+CPPUTEST_USE_MEM_LEAK_DETECTION = N
+```
+
+Not ideal if you want to do memory leak detection *AND* use `std::optional`.
+
+**Original text from here**
+
 This is a minimal test case to show that I can't compile with
 `optional` when running under CppUTest framework.
 
